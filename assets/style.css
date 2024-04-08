@@ -1,0 +1,152 @@
+:root {
+    --background-color: white;
+    --text-color: black;
+    --welcome-color: maroon;
+    --box-shadow: 8px 4px 4px rgba(0, 0, 0, 0.6);
+}
+
+[data-theme="dark"] {
+    --background-color: rgb(63, 50, 50);
+    --text-color: rgb(255, 252, 252);
+    --welcome-color: rgb(206, 105, 105);
+    --box-shadow: 8px 4px 4px rgba(255, 255, 255, 0.6);
+}
+
+
+* {
+
+    /* border: 2px solid yellow; */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+
+.welcome1 {
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--welcome-color);
+}
+
+.welcome2 {
+
+    text-align: center;
+    font-size: x-large;
+    font-style: italic;
+}
+
+.welcome3 {
+
+    text-align: center;
+    font-size: larger;
+
+}
+
+.form {
+
+    margin: 3rem;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: var(--box-shadow);
+    max-width: 70rem;
+    min-width: 50rem;
+    background-color: var(--welcome-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* figure {
+    padding: 5rem;
+    margin-top: 100px;
+} */
+.onyourmind {
+    margin-top: 10px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.info {
+    text-align: center;
+    font-size: medium;
+    margin: 25px;
+    display: flex;
+    gap: 2rem;
+
+}
+
+#username {
+    height: 2rem;
+    width: 40%;
+    border-radius: 6px;
+}
+
+#title {
+
+    height: 2rem;
+    width: 40%;
+    border-radius: 6px;
+}
+
+#textarea {
+    height: 5rem;
+    width: 80%;
+    border-radius: 12px;
+}
+
+.content {
+    text-align: center;
+
+}
+
+.header {
+    text-align: center;
+
+}
+
+#blogs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-card {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 6px;
+    box-shadow: var(--box-shadow);
+    max-width: 30rem;
+    min-width: 15rem;
+    background-color: var(--welcome-color);
+}
+
+.footer {
+    color: var(--text-color);
+    background-color: var(--welcome-color);
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    padding: 3rem;
+    width: 100%;
+}
